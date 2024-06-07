@@ -58,7 +58,7 @@ a {
   color: #ffffff; }
 
 .text-primary {
-  color: #0389ff !important; }
+  color: #523738 !important; }
 
 a.text-primary {
   color: #0389ff !important; }
@@ -344,7 +344,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
           visibility: visible;
           opacity: 1; }
   .site-nav.dark a {
-    color: #000000; }
+    color: #aa797b; }
   .site-nav.dark .site-navigation .site-menu > li > a {
     color: rgba(0, 0, 0, 0.5); }
     .site-nav.dark .site-navigation .site-menu > li > a:hover {
@@ -544,9 +544,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a {
       color: #000000 !important; }
       .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a:hover, .sticky-wrapper.is-sticky .site-navbar .site-menu > li > a.active {
-        color: #0389ff !important; }
+        color: #4e4eb7 !important; }
     .sticky-wrapper.is-sticky .site-navbar .site-menu > li.active a {
-      color: #0389ff !important; }
+      color: #4e4eb7 !important; }
   .sticky-wrapper .shrink {
     padding-top: 0px !important;
     padding-bottom: 0px !important; }
@@ -619,7 +619,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
 .untree_co-section {
   padding: 7rem 0; }
   .untree_co-section .heading, .untree_co-section .subheading {
-    color: #000000; }
+    color: #ac7b7b; }
     .untree_co-section .heading strong, .untree_co-section .subheading strong {
       font-weight: 700; }
   .untree_co-section .heading {
