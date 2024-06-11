@@ -452,7 +452,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
       position: relative;
       color: #000000; }
       .site-mobile-menu .site-nav-wrap a.active, .site-mobile-menu .site-nav-wrap a:hover {
-        color: #0389ff; }
+        color: #b16060; }
     .site-mobile-menu .site-nav-wrap li {
       position: relative;
       display: block; }
@@ -1654,7 +1654,7 @@ figure.dotted-bg {
       width: 30px;
       height: 30px;
       position: relative;
-      background: #0389ff;
+      background: #d09191;
       border-radius: 50%;
       color: #ffffff; }
       .site-footer .social li a:before {
