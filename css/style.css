@@ -100,7 +100,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4 {
     border-color: #000000; }
     .btn.btn-outline-black:hover {
       border-color: #000000;
-      background: #000000;
+      background: #ffffff;
       color: #ffffff; }
   .btn.btn-secondary {
     background: #000000;
