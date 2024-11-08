@@ -1,97 +1,426 @@
+<!-- /*
+* Template Name: Minimal
+* Template Author: Untree.co
+* Author URI: https://untree.co/
+* License: https://creativecommons.org/licenses/by/3.0/
+*/ -->
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="author" content="Untree.co">
   <link rel="shortcut icon" href="images/kiwi.png">
 
-  <!-- 字體引用 -->
+  <meta name="description" content="" />
+  <meta name="keywords" content="" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=PT+Mono&display=swap" rel="stylesheet">
 
-  <!-- 样式表 -->
   <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Monica Portfolio</title>
-
-  <!-- 自定义样式 -->
   <style>
-    #dont_press {
+    #dont_press{
       font-family: "Gill Sans", sans-serif;
       font-weight: 550;
     }
   </style>
+  <title>Minimal Free HTML Template by Untree.co</title>
 </head>
 
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="100">
 
-<!-- 導航區塊 -->
-<nav class="site-nav dark site-navbar-target">
+<div class="lines-wrap">
+  <div class="lines-inner">
+    <div class="lines"></div>
+  </div>
+</div>
+<!-- END lines -->
+
+<div class="site-mobile-menu site-navbar-target">
+  <div class="site-mobile-menu-header">
+    <div class="site-mobile-menu-close">
+      <span class="icofont-close js-menu-toggle"></span>
+    </div>
+  </div>
+  <div class="site-mobile-menu-body"><ul class="site-nav-wrap">
+    <li><a href="#home-section" class="nav-link active">Home</a></li>
+    <li><a href="#portfolio-section" class="nav-link">Portfolio</a></li>
+    <li class="has-children"><span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem0"></span>
+      <a href="#about-section" class="nav-link">About</a>
+      <ul class="collapse" id="collapseItem0">
+        <li><a href="elements.html" class="nav-link">Elements</a></li>
+        <li class="has-children"><span class="arrow-collapse collapsed" data-toggle="collapse" data-target="#collapseItem1"></span>
+          <a href="#">Menu Two</a>
+          <ul class="collapse" id="collapseItem1">
+            <li><a href="#" class="nav-link">Sub Menu One</a></li>
+            <li><a href="#" class="nav-link">Sub Menu Two</a></li>
+            <li><a href="#" class="nav-link">Sub Menu Three</a></li>
+          </ul>
+        </li>
+        <li><a href="#" class="nav-link">Menu Three</a></li>
+      </ul>
+    </li>
+    <li><a href="#services-section" class="nav-link">Don't press</a></li>
+
+  </ul></div>
+</div>
+
+<nav class="site-nav dark mb-5 site-navbar-target">
   <div class="container">
-    <a href="index.html" class="logo">Monica<span class="text-primary">.</span></a>
-    <a href="#" class="burger site-menu-toggle js-menu-toggle d-inline-block" data-toggle="collapse" data-target="#main-navbar">
-      <span></span>
-    </a>
+    <div class="site-navigation">
+      <a href="index.html" class="logo m-0">Monica<span class="text-primary">.</span></a>
+
+
+      <a href="#" class="burger ml-auto float-right site-menu-toggle js-menu-toggle d-inline-block d-lg-inline-block" data-toggle="collapse" data-target="#main-navbar">
+        <span></span>
+      </a>
+
+    </div>
   </div>
 </nav>
 
-<!-- 主頁英雄區塊 -->
 <div class="untree_co-section pb-0" id="home-section">
-  <div class="container text-center">
-    <h1 class="heading mb-3"><strong>Monica<span class="text-primary">.</span> Portfolio</strong></h1>
-    <!-- 按鈕鏈接至 YouTube -->
-    <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-outline-black">Nothing here</a></p>
+  <div class="container">
+    <div class="row justify-content-center text-center">
+      <div class="col-md-8">
+        <h1 class="heading gsap-reveal-hero mb-3"><strong>Monica<span class="text-primary">.</span> Portfolio</strong></h1>
+        <h2 class="subheading gsap-reveal-hero mb-4">
+
+        </h2>
+        <p class="gsap-reveal-hero"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-outline-black">nothing here</a></p>
+      </div>
+    </div>
+
   </div>
 </div>
 
-<!-- 作品集區塊 -->
-<div class="untree_co-section" id="portfolio-section">
+
+<div class="untree_co-section untree_co-section-4 pb-0"  id="portfolio-section">
   <div class="container">
-    <div class="portfolio-wrapper row">
-      <!-- 作品項目模板 -->
-      <div class="item col-sm-6 col-md-6 col-lg-4">
-        <a href="portfolio-single-1.html" class="portfolio-item">
-          <div class="overlay">
-            <span class="wrap-icon icon-link2"></span>
-            <div class="portfolio-item-content">
-              <h3>Obsessed Book</h3>
-              <p>web, branding</p>
+
+
+    <div class="relative"><div class="loader-portfolio-wrap"><div class="loader-portfolio"></div></div> </div>
+    <div id="portfolio-single-holder"></div>
+
+    <div class="portfolio-wrapper">
+
+      <div id="posts" class="row">
+
+        <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+          <a href="portfolio-single-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
+            <div class="overlay">
+              <span class="wrap-icon icon-link2"></span>
+              <div class="portfolio-item-content">
+                <h3>Obsessed Book</h3>
+                <p>web, branding</p>
+              </div>
             </div>
-          </div>
-          <!-- 圖片展示 -->
-          <img src="images/聖誕卡.jpg" class="img-fluid" alt="Obsessed Book" />
-        </a>
+            <img src="images/聖誕卡.jpg" class="lazyload  img-fluid" alt="Images" />
+          </a>
+        </div>
+
+        <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+          <a href="portfolio-single-2.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="2">
+            <div class="overlay">
+              <span class="wrap-icon icon-link2"></span>
+              <div class="portfolio-item-content">
+                <h3>Book Binding</h3>
+                <p>illustration, application</p>
+              </div>
+            </div>
+            <img src="images/0.png" class="lazyload  img-fluid" alt="Images" />
+          </a>
+        </div>
+
+        <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+          <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+            <div class="overlay">
+              <span class="wrap-icon icon-link2"></span>
+              <div class="portfolio-item-content">
+                <h3>Fresh Fruits</h3>
+                <p>web, branding</p>
+              </div>
+            </div>
+            <img src="images/和泉兄弟.jpg" class="lazyload  img-fluid" alt="Images" />
+          </a>
+        </div>
+
+        <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+          <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+            <div class="overlay">
+              <span class="wrap-icon icon-link2"></span>
+              <div class="portfolio-item-content">
+                <h3>Powerful Speaker</h3>
+                <p>web, branding</p>
+              </div>
+            </div>
+            <img src="images/monica.png" class="lazyload  img-fluid" alt="Images" />
+          </a>
+        </div>
+
+        <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+          <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+            <div class="overlay">
+        ![](images/monica.png)      <span class="wrap-icon icon-link2"></span>
+              <div class="portfolio-item-content">
+                <h3>Wireless Headset</h3>
+                <p>web, branding</p>
+              </div>
+            </div>
+            <img src="images/IMG_0328.PNG" class="lazyload  img-fluid" alt="Images" /><img>
+          </a>
+        </div>
+
+
+        <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+          <a href="portfolio-single-1.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="1">
+            <div class="overlay">
+              <span class="wrap-icon icon-link2"></span>
+              <div class="portfolio-item-content">
+                <h3>Black & White Cubic</h3>
+                <p>web, branding</p>
+              </div>
+            </div>
+            <img src="images/未命名的作品.png" class="lazyload  img-fluid" alt="Images" />
+          </a>
+        </div>
+
+        <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+          <a href="portfolio-single-2.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="2">
+            <div class="overlay">
+              <span class="wrap-icon icon-link2"></span>
+              <div class="portfolio-item-content">
+                <h3>Nike Shoe</h3>
+                <p>illustration, application</p>
+              </div>
+            </div>
+            <img src="images/miza.jpg" class="lazyload  img-fluid" alt="Images" />
+          </a>
+        </div>
+
+        <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+          <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+            <div class="overlay">
+              <span class="wrap-icon icon-link2"></span>
+              <div class="portfolio-item-content">
+                <h3>Old Typewriter</h3>
+                <p>web, branding</p>
+              </div>
+            </div>
+            <img src="images/nanasa.jpg" class="lazyload  img-fluid" alt="Images" />
+          </a>
+        </div>
+
+        <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+          <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+            <div class="overlay">
+              <span class="wrap-icon icon-link2"></span>
+              <div class="portfolio-item-content">
+                <h3>Walking Man</h3>
+                <p>web, branding</p>
+              </div>
+            </div>
+            <img src="images/nini.jpg" class="lazyload  img-fluid" alt="Images" />
+          </a>
+        </div>
+
+        <div class="item web branding col-sm-6 col-md-6 col-lg-4 isotope-mb-2">
+          <a href="portfolio-single-3.html" class="portfolio-item ajax-load-page isotope-item gsap-reveal-img" data-id="3">
+            <div class="overlay">
+              <span class="wrap-icon icon-link2"></span>
+              <div class="portfolio-item-content">
+                <h3>Progress Journal</h3>
+                <p>web, branding</p>
+              </div>
+            </div>
+            <img src="images/yu.png" class="lazyload  img-fluid" alt="Images" />
+          </a>
+        </div>
+
+
+
       </div>
-      <!-- 可以新增更多作品項目 -->
+    </div>
+
+
+    <!-- </div>
+    </div> -->
+  </div>
+</div>
+
+
+<div class="untree_co-section pb-0" id="about-section">
+  <div class="container">
+    <div class="row justify-content-center mb-3">
+      <div class="col-lg-7 mx-auto text-center author-wrap">
+        <img src="images/head-1.png" alt="Image" class="img-fluid rounded-circle mb-3">
+        <h3 class="text-black h5 font-weight-bold mb-2 gsap-reveal-hero">Monica</h3>
+        <p class="gsap-reveal-hero" id="dont_press">只是坨史萊姆</p>
+      </div>
+    </div>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-7" style="text-align: center;">
+
+        <p class="gsap-reveal-hero mb-5">     </p>
+
+        <p class="gsap-reveal-hero" >是琪子也是勛宇，有許多分靈體</p>
+
+        <p class="gsap-reveal-hero mb-5">     </p>
+
+
+        <p class="gsap-reveal-hero text-center"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-outline-black" id="dont_press">沒東西不要亂按</a></p>
+      </div>
     </div>
   </div>
 </div>
 
-<!-- 關於我們區塊 -->
-<div class="untree_co-section" id="about-section">
-  <div class="container text-center">
-    <img src="images/head-1.png" alt="Monica" class="img-fluid rounded-circle mb-3">
-    <h3 class="text-black h5 font-weight-bold mb-2">Monica</h3>
-    <p>只是坨史萊姆</p>
-    <p>是琪子也是勛宇，有許多分靈體</p>
-    <!-- 提示按鈕 -->
-    <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="btn btn-outline-black">沒東西不要亂按</a></p>
-  </div>
-</div>
 
-<!-- “不要按” 區塊 -->
 <div class="untree_co-section pb-0" id="services-section">
-  <div class="container text-center">
-    <h2 class="section-heading"><strong>Don't press</strong></h2>
-    <p id="dont_press">都說了 沒東西了!</p>
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-lg-7 text-center mx-auto">
+        <h2 class="section-heading gsap-reveal-hero mb-0"><strong>Don't press</strong></h2>
+        <p class="gsap-reveal-hero" id="dont_press">都說了 沒東西了!</p>
+        <div class="wave gsap-reveal-hero" >
+          <svg>
+            <path d="M10,10 L50,100 L90,50" stroke="#0389ff"></path>
+          </svg>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
 
-<!-- 引入JS文件 -->
+
+
+<div class="site-footer">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="widget">
+          <h3>Home</h3>
+          <ul class="list-unstyled float-left links">
+            <li><a href="#">Untree.co</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Privacy</a></li>
+          </ul>
+        </div> <!-- /.widget -->
+      </div> <!-- /.col-lg-3 -->
+
+      <div class="col-lg-3">
+        <div class="widget">
+          <h3>Projects</h3>
+          <ul class="list-unstyled float-left links">
+            <li><a href="#">HTML5</a></li>
+            <li><a href="#">CSS3</a></li>
+            <li><a href="#">Untree.co</a></li>
+            <li><a href="#">Free Templates</a></li>
+            <li><a href="#">WordPress Themes</a></li>
+          </ul>
+        </div> <!-- /.widget -->
+      </div> <!-- /.col-lg-3 -->
+
+      <div class="col-lg-3">
+        <div class="widget">
+          <h3>Services</h3>
+          <ul class="list-unstyled float-left links">
+            <li><a href="#">Untree.co</a></li>
+            <li><a href="#">jQuery</a></li>
+            <li><a href="#">Bootstrap</a></li>
+            <li><a href="#">Freebies</a></li>
+          </ul>
+        </div> <!-- /.widget -->
+      </div> <!-- /.col-lg-3 -->
+
+
+      <div class="col-lg-3">
+        <div class="widget">
+          <h3>Contact</h3>
+          <address>43 Raymouth Rd. Baltemoer, London 3910</address>
+          <ul class="list-unstyled links mb-4">
+            <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+            <li><a href="tel://11234567890">+1(123)-456-7890</a></li>
+            <li><a href="mailto:info@mydomain.com">info@mydomain.com</a></li>
+          </ul>
+
+          <h3>Connect</h3>
+          <ul class="list-unstyled social">
+            <li><a href="#"><span class="icon-instagram"></span></a></li>
+            <li><a href="#"><span class="icon-twitter"></span></a></li>
+            <li><a href="#"><span class="icon-facebook"></span></a></li>
+            <li><a href="#"><span class="icon-linkedin"></span></a></li>
+            <li><a href="#"><span class="icon-pinterest"></span></a></li>
+            <li><a href="#"><span class="icon-dribbble"></span></a></li>
+          </ul>
+
+        </div> <!-- /.widget -->
+      </div> <!-- /.col-lg-3 -->
+
+    </div> <!-- /.row -->
+
+
+
+
+
+    <div class="row mt-5">
+      <div class="col-12 text-center">
+        <!--
+          **==========
+          NOTE:
+          Please don't remove this copyright link unless you buy the license here https://untree.co/license/
+
+          **==========
+        -->
+        <p class="mb-0">Copyright &copy;<script>document.write(new Date().getFullYear());</script>. All Rights Reserved. &mdash; Designed with love by <a href="https://untree.co">Untree.co</a>  Distributed By <a href="https://themewagon.com">ThemeWagon</a> <!-- License information: https://untree.co/license/ -->
+        </p>
+      </div>
+    </div>
+  </div> <!-- /.container -->
+</div> <!-- /.site-footer -->
+
+<div id="overlayer"></div>
+<div class="loader">
+  <div class="spinner-border" role="status">
+    <span class="sr-only">Loading...</span>
+  </div>
+</div>
+
 <script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/wave-animate.js"></script>
+<script src="js/circle-progress.js"></script>
+<script src="js/imagesloaded.pkgd.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/ScrollMagic.min.js"></script>
+<script src="js/scrollmagic.animation.gsap.min.js"></script>
+
+
 <script src="js/custom.js"></script>
 
 </body>
+
 </html>
